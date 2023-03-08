@@ -1,0 +1,20 @@
+create table colleagues (
+  id int not null auto_increment,
+  title varchar(10) not null,
+  first_name varchar(255) not null,
+  surname varchar(255) not null,
+  informal_name varchar(255) null default null,
+  address varchar(255) not null,
+  town varchar(255) null default null,
+  postcode varchar(10) not null,
+  ni_number varchar(10) null default null,
+  dob date null default null,
+  mobile_tel varchar(20) null default null,
+  home_tel varchar(20) null default null,
+  other_tel varchar(20) null default null,
+  personal_email varchar(255) null default null,
+  gender varchar(10) not null,
+  initials varchar(10) null default null,
+  emergency_contact varchar(255) null default null,
+  primary key (id)
+);

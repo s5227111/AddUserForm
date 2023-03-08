@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+
+    <title>Add Colleague</title>
+
+    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="theme-color" content="#712cf9">
+
+    <!-- importing jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"
+        integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous">
+        </script>
+</head>
+
+<body class="bg-light">
+
+    <div class="container">
+        <main>
+            <div class="py-5 text-center">
+                <img class="d-block mx-auto mb-4" src="img/logo.png" alt="Eden Group">
+            </div>
+
+            <div class="row g-5">
+                <div class="col-md-12 col-lg-12">
+                    <h4 class="mb-3">Add Colleague</h4>
+                    <form class="needs-validation" novalidate>
+                        <div class="row g-3">
+                            <!-- Title -->
+                            <div class="col-md-12">
+                                <label for="title" class="form-label">Title</label>
+                                <select class="form-select" id="title" name="title" required>
+                                    <option value="">Please Select</option>
+                                    <option value="Mr">Mr</option>
+                                    <option value="Mrs">Mrs</option>
+                                    <option value="Miss">Miss</option>
+                                    <option value="Ms">Ms</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select a valid title.
+                                </div>
+                            </div>
+
+                            <!-- First Name -->
+                            <div class="col-sm-12">
+                                <label for="firstName" class="form-label">First name</label>
+                                <input type="text" class="form-control" id="firstName" name="first_name" required>
+                                <div class="invalid-feedback">
+                                    Valid first name is required.
+                                </div>
+                            </div>
+
+                            <!-- Surname -->
+                            <div class="col-sm-12">
+                                <label for="surname" class="form-label">Surname</label>
+                                <input type="text" class="form-control" id="surname" name="surname" required>
+                                <div class="invalid-feedback">
+                                    Valid surname is required.
+                                </div>
+                            </div>
+
+                            <!-- Informal Name -->
+                            <div class="col-12">
+                                <label for="informalName" class="form-label">Informal Name</label>
+
+                                <input type="text" class="form-control" id="informalName" name="informal_name">
+
+                            </div>
+                            <hr class="my-4">
+
+                            <!-- Address -->
+                            <div class="col-12">
+                                <label for="address" class="form-label">Address</label>
+                                <input type="text" class="form-control" id="address" name="address" required>
+                                <div class="invalid-feedback">
+                                    Please enter the address.
+                                </div>
+                            </div>
+
+                            <!-- Town -->
+                            <div class="col-12">
+                                <label for="town" class="form-label">Town</label>
+                                <input type="text" class="form-control" id="town" name="town">
+                            </div>
+
+                            <!-- Postcode -->
+                            <div class="col-md-12">
+                                <label for="postcode" class="form-label">Postcode</label>
+                                <input type="text" class="form-control" id="postcode" name="postcode" required>
+                                <div class="invalid-feedback">
+                                    Postcode required.
+                                </div>
+                            </div>
+
+                            <!-- NI Number -->
+                            <div class="col-md-12">
+                                <label for="niNumber" class="form-label">NI Number</label>
+                                <input type="text" class="form-control" id="niNumber" name="ni_number">
+                            </div>
+
+                            <!-- DOB -->
+                            <div class="col-md-12">
+                                <label for="dob" class="form-label">Date of birth</label>
+                                <input type="date" class="form-control" id="dob" name="dob">
+                            </div>
+
+                            <!-- Mobile Tel -->
+                            <div class="col-md-12">
+                                <label for="mobileTel" class="form-label">Mobile tel</label>
+                                <input type="tel" class="form-control" id="mobileTel" name="mobile_tel">
+                            </div>
+
+                            <!-- Home Tel -->
+                            <div class="col-md-12">
+                                <label for="homeTel" class="form-label">Home tel</label>
+                                <input type="tel" class="form-control" id="homeTel" name="home_tel">
+                            </div>
+
+                            <!-- Other Tel -->
+                            <div class="col-md-12">
+                                <label for="otherTel" class="form-label">Other tel</label>
+                                <input type="tel" class="form-control" id="otherTel" name="other_tel">
+                            </div>
+
+                            <!-- Personal Email -->
+                            <div class="col-12">
+                                <label for="personalEmail" class="form-label">Personal Email</label>
+                                <input type="email" class="form-control" id="personalEmail" name="personal_email">
+                            </div>
+
+                            <!-- Gender -->
+                            <div class="col-md-12">
+                                <label for="gender" class="form-label">Gender</label>
+                                <select class="form-select" id="gender" name="gender" required>
+                                    <option value="">Please Select</option>
+                                    <option value="Male">Male</option>
+                                    <option value="Female">Female</option>
+                                    <option value="Prefer not to respond">Prefer not to respond</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                    Please select the gender.
+                                </div>
+                            </div>
+
+                            <!-- Initials -->
+                            <div class="col-md-12">
+                                <label for="initials" class="form-label">Initials</label>
+                                <input type="email" class="form-control" id="initials" name="initials">
+                            </div>
+
+                            <!-- Emergency contact name -->
+                            <div class="col-md-12">
+                                <label for="emergncyContact" class="form-label">Emergency contact name</label>
+                                <input type="email" class="form-control" id="emergncyContact" name="emergncy_contact">
+                            </div>
+
+                        </div>
+
+                        <hr class="my-4">
+
+                        <button class="w-100 btn btn-primary btn-lg" type="submit">Add</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+    </div>
+
+    <!-- importing libraries -->
+    <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+        </script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="js/form.js"></script>
+</body>
+
+</html>
